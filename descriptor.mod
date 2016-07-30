@@ -8,5 +8,5 @@ tags={
     "Military"
     "Utilities"
 }
-picture="blah.jpg"
+picture="Proof-2.jpg"
 supported_version="1.2.*"
