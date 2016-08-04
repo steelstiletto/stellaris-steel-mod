@@ -1,0 +1,1 @@
+NDefines.NGameplay.LEADER_BASE_CAP			= 50    -- Was 10
