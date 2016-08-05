@@ -8,8 +8,11 @@ Leader pool changes more often and has a lower maximum age. Scientists assisting
 -- War Changes
 Spaceports have increased navy scaling per level, from 6/7/8/9/10/11 to 5/7/9/11/13/15
 
+-- Army Changes
+Bombardment damage slowed, and attacker 2x bonus on destroyed fortifications removed. Army size doubled to 24
+
 -- AI Opinion Changes
 Border friction has a bigger impact on AI opinion. Maximum trust increased by 50%. AI cares slightly more about threat, and opinion weighs more into threat assesment. Enabled option for AI to sometimes colonize valuable non-adjacent systems
 
 -- Misc Changes
-Max trade deal length increased to 50 years, cost to remove systems from sectors reduced to 15, and scaling for faction support adjusted to matter more at low happiness and less at high happiness
+Max trade deal length increased to 50 years, cost to remove systems from sectors reduced to 15, and scaling for faction support adjusted to matter more at low happiness and less at high happiness. Species creation trait max increased by 1 (to 6)

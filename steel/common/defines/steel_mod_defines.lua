@@ -8,7 +8,7 @@
 NDefines.NGameplay.LEADER_POOL_LEAD_TIME                        = 5     --10--  Years leaders will remain in the leader pool until replaced
 NDefines.NGameplay.LEADER_AGE_MAX                               = 45    --50-- Max age of generated leaders
 NDefines.NGameplay.LEADER_SCIENTIST_ASSIST_RESEARCH_MULT        = 1.2   --1-- Assist Research modifier-mult per skill level (this value times skill level equals modifier)
-NDefines.NGameplay.DEBRIS_RESEARCH_TIME                         = 45    --90-- How many days it takes to analyze 1 debris.
+NDefines.NGameplay.DEBRIS_RESEARCH_TIME                         = 30    --90-- How many days it takes to analyze 1 debris.
 NDefines.NGameplay.LEADER_GOVERNOR_SECTOR_MONTHLY_EXPERIENCE    = 5     --3.5-- Monthy exp from governing sector.
 
 --------------------------------------------------------------------------------------------
@@ -18,6 +18,19 @@ NDefines.NGameplay.LEADER_GOVERNOR_SECTOR_MONTHLY_EXPERIENCE    = 5     --3.5-- 
 
 NDefines.NGameplay.NAVY_SIZE_SPACEPORT_BASE         = 3     --5-- Base value of Naval Capacity for each spaceport
 NDefines.NGameplay.NAVY_SIZE_SPACEPORT_MULT         = 2     --1-- Mult value of Naval Capacity for each spaceport level ( NAVY_SIZE_BASE + Level * NAVY_SIZE_MULT )
+
+----------------------------------------------------------------------------
+-- Army Changes                                                           --
+-- Bombardment damage slowed, and defender attacker 2x bonus on destroyed --
+-- fortifications removed. Army size doubled to 24                        --
+----------------------------------------------------------------------------
+
+NDefines.NGameplay.GROUND_SUPPORT_SOFT_DMG          = 0.10  --0.30-- Multiplier to fortification damage
+NDefines.NGameplay.GROUND_SUPPORT_LIMITED_DMG       = 0.20  --0.40-- Multiplier to fortification damage
+NDefines.NGameplay.GROUND_SUPPORT_FULL_DMG          = 0.40  --0.50-- Multiplier to fortification damage
+NDefines.NGameplay.PLANET_ARMIES_LIMIT              = 24    --12-- Maximum number of troops per planet
+NDefines.NGameplay.PLANET_FORTIFICATION_DEFENSE_MIN = 1     --0.5-- At 0% fortification, divide damage to defending armies by this
+NDefines.NAI.TRANSPORT_FLEET_SIZE                   = 24    --12-- AI will have transport fleets of this size
 
 ----------------------------------------------------------------------------------------
 -- AI Opinion Changes                                                                 --
@@ -44,9 +57,11 @@ NDefines.NAI.COLONIZE_NON_ADJACENT_DIV              = 5     --3-- If colony is f
 -- Misc Changes                                                              --
 -- Max trade deal length increased to 50 years, cost to remove systems from  --
 -- sectors reduced to 15, and scaling for faction support adjusted to matter --
--- more at low happiness and less at high happiness                          --
+-- more at low happiness and less at high happiness. Species creation trait  --
+-- max increased by 1 (to 6)                                                 --
 -------------------------------------------------------------------------------
 
 NDefines.NGameplay.MAX_TRADE_DEAL_LENGTH_YEARS      = 50    --30-- Maximum length of a trade deal in years.
 NDefines.NGameplay.SECTOR_REVOKE_SYSTEM_COST        = 15    --25-- Influence cost for revoking a system from a sector
 NDefines.NPop.FACTION_SUPPORT_LEVELS                = { 1, 0, 0.75, 20.0, 0.50, 45.0, 0.25, 100.0 }     --{1,5.0,0.75,0,0.50,65,0.25,100}-- In pairs, first is happiness, second is amount of support.
+NDefines.NSpecies.MAX_TRAITS                        = 5     --4-- Max racial traits (1 is always used for homeworld type trait)
